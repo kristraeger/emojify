@@ -5,11 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- all other head tags must come after -->
-	<title>title</title>
+	<title>✨Emojify✨</title>
 
-	<!-- SEO *must be edited*-->
-	<meta name="description" content="site description goes here">
-	<meta name="keywords" content="keywords go here">
+	<!-- SEO-->
+	<meta name="description" content="Want to enhance your texts with emojis but you just don't get when to use which one?📝🤔 Are you tired of sifting through your keyboard to find the one you want to use?🙄🕗💩 Emojify adds emojis to your text for you!🤓🤘 We're not replacing the original word, this way your message is easily readable but still gets some extra spark &amp; fun.🤗💌🎉 Emoji expression represents the modern communication of today.">
+	<meta name="keywords" content="emojify, emojis, emoji translate, text to emoji, messaging, fun, emoji description, emoji meaning">
 	<meta name="author" content="Kristina Traeger">
 
 
@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 
-	<!-- http://realfavicongenerator.net/ *individual favicon package must be created and extracted in "favicon"*-->
+	<!-- http://realfavicongenerator.net/ -->
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
@@ -29,7 +29,6 @@
 	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
 	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png" sizes="192x192">
 	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
 	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="favicon/manifest.json">
@@ -41,11 +40,27 @@
 </head>
 <body>
 
+	<div class="container">
+	    <h1>Original</h1>
+	    <p class="note">(paste your text here or just start typing!)</p>
+	    <textarea id="input" placeholder=" your message goes here..."></textarea>
+	    <br><br>
+	    <h1>✨Emojifyed✨</h1>
+	    <p class="note">(just copy it to your application!)</p>
+	    <div id="output"></div>
+
+	    <footer>
+			<p>🤓<a href="http://kristinawritesco.de/" target="_blank">kristinawritesco.de</a></p>
+		</footer>
+  </div>
+
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/emojis.json"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
