@@ -1,9 +1,9 @@
 {
-  // "grinning": {
-  //   "keywords": ["face", "smile", "happy", "joy", ":D"],
-  //   "char": "😀",
-  //   "category": "people"
-  // },
+  "grinning": {
+    "keywords": ["face", "smile", "happy", "joy", ":D"],
+    "char": "😀",
+    "category": "people"
+  },
   "grimacing": {
     "keywords": ["face", "grimace", "teeth"],
     "char": "😬",
