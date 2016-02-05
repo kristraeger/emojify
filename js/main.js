@@ -1,20 +1,20 @@
-var emojilib
+function emojify() {
+	
+	// get input text and split in into words
+	var input = getElementById("input").text().split()
+	console.log(input)
 
-// get data from local json file
+	// get data from local json file
+	$.ajax({
+		url: "https://github.com/kristraeger/emojify/blob/master/js/emojis.json",
+		dataType: "json",
+		success: function (emojis) {
+			emojis.keywords
+		}
 
-(function() {
-  var request = new XMLHttpRequest();
-  request.open('GET', 'js/emojis.json', true);
-  request.onload = function() {
-    if (request.status >= 200 && request.status < 400) {
-      emojilib = JSON.parse(request.response);
-      var event = document.createEvent('HTMLEvents');
-      event.initEvent('emoji-ready', true, false);
-      document.dispatchEvent(event);
-    }
-  };
-  request.send();
-})();
+	})
+
+} // ./ emojify
 
 
 
