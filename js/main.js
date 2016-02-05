@@ -9,7 +9,7 @@ function emojify() {
 		url: "https://github.com/kristraeger/emojify/blob/master/js/emojis.json",
 		dataType: "json",
 		success: function (emojis) {
-			emojis.keywords
+			console.log(emojis.keywords)
 		}
 
 	})
