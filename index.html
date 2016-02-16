@@ -38,12 +38,13 @@
 
 
 </head>
-<body>
+<body onload="load()">
 
 	<div class="container">
 	    <h1>Original</h1>
 	    <p class="note">(paste your text here or just start typing!)</p>
-	    <textarea id="input" placeholder=" your message goes here..."></textarea>
+	    <textarea id="input" placeholder="your message goes here..." onkeydown="if (event.keyCode == 13) {emojify(); return false; }"></textarea>
+	    <button type="button" id="submitBtn" class="btn btn-sm" onclick="emojify()"> 👉emojify </button>
 	    <br><br>
 	    <h1>✨Emojifyed✨</h1>
 	    <p class="note">(just copy it to your application!)</p>
